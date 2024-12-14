@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>JSON Store</h1>
+        <div class="theme-toggle">
+            <button id="theme-btn" class="theme-btn">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="split-pane">
+            <!-- Left Pane -->
+            <div class="pane left-pane">
+                <div class="info-text">
+                    <p>Paste your JSON, XML, CSV, YAML, SVG, .INI, serialized, hex, base64 or binary here.</p>
+                    <p>Processing is 100% local; no data is sent to server.</p>
+                    <p>Auto-save: write stuff and it's saved in your localStorage, clear the text field and it's gone.</p>
+                </div>
+                <textarea id="input-area" spellcheck="false"></textarea>
+            </div>
+
+            <!-- Right Pane -->
+            <div class="pane right-pane">
+                <div class="toolbar">
+                    <button id="copy-btn" class="tool-btn"><i class="fas fa-copy"></i> Copy</button>
+                    <button id="download-btn" class="tool-btn"><i class="fas fa-download"></i> Download</button>
+                    <button id="clear-btn" class="tool-btn"><i class="fas fa-trash"></i> Clear</button>
+                </div>
+                <pre id="output-area"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
